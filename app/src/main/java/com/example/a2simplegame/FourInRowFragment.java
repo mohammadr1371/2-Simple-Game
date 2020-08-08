@@ -156,6 +156,7 @@ public class FourInRowFragment extends Fragment {
         mButton1_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton1_1.setEnabled(false);
                 selectButton(mButton1_1, 1, 1);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -173,6 +174,7 @@ public class FourInRowFragment extends Fragment {
         mButton1_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton1_2.setEnabled(false);
                 selectButton(mButton1_2, 1, 2);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -190,6 +192,7 @@ public class FourInRowFragment extends Fragment {
         mButton1_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton1_3.setEnabled(false);
                 selectButton(mButton1_3, 1, 3);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -206,6 +209,7 @@ public class FourInRowFragment extends Fragment {
         mButton1_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton1_4.setEnabled(false);
                 selectButton(mButton1_4, 1, 4);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -222,6 +226,7 @@ public class FourInRowFragment extends Fragment {
         mButton2_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton2_1.setEnabled(false);
                 selectButton(mButton2_1, 2, 1);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -239,6 +244,7 @@ public class FourInRowFragment extends Fragment {
         mButton2_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton2_2.setEnabled(false);
                 selectButton(mButton2_2, 2, 2);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -256,6 +262,7 @@ public class FourInRowFragment extends Fragment {
         mButton2_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton2_3.setEnabled(false);
                 selectButton(mButton2_3, 2, 3);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -273,6 +280,7 @@ public class FourInRowFragment extends Fragment {
         mButton2_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton2_4.setEnabled(false);
                 selectButton(mButton2_4, 2, 4);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -290,6 +298,7 @@ public class FourInRowFragment extends Fragment {
         mButton3_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton3_1.setEnabled(false);
                 selectButton(mButton3_1, 3, 1);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -307,6 +316,7 @@ public class FourInRowFragment extends Fragment {
         mButton3_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton3_2.setEnabled(false);
                 selectButton(mButton3_2, 3, 2);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -324,6 +334,7 @@ public class FourInRowFragment extends Fragment {
         mButton3_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton3_3.setEnabled(false);
                 selectButton(mButton3_3, 3, 3);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -338,26 +349,11 @@ public class FourInRowFragment extends Fragment {
             }
         });
 
-        mButton3_3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                selectButton(mButton3_3, 3, 3);
-                if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
-                    mRetry.setVisibility(View.VISIBLE);
-                    Toast.makeText(getActivity(), "Blue Wins!", Toast.LENGTH_LONG).show();
-                    disableButtons();
-                } else if ((checkRedHorizontal(targetTable) == true) || (checkRedVertical(targetTable) == true)) {
-                    mRetry.setVisibility(View.VISIBLE);
-                    Toast.makeText(getActivity(), "Red Wins!", Toast.LENGTH_LONG).show();
-                    disableButtons();
-                }
-
-            }
-        });
 
         mButton3_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton3_4.setEnabled(false);
                 selectButton(mButton3_4, 3, 4);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -375,6 +371,7 @@ public class FourInRowFragment extends Fragment {
         mButton4_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton4_1.setEnabled(false);
                 selectButton(mButton4_1, 4, 1);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -392,6 +389,7 @@ public class FourInRowFragment extends Fragment {
         mButton4_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton4_2.setEnabled(false);
                 selectButton(mButton4_2, 4, 2);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -409,6 +407,7 @@ public class FourInRowFragment extends Fragment {
         mButton4_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton4_3.setEnabled(false);
                 selectButton(mButton4_3, 4, 3);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
@@ -426,6 +425,7 @@ public class FourInRowFragment extends Fragment {
         mButton4_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mButton4_4.setEnabled(false);
                 selectButton(mButton4_4, 4, 4);
                 if ((checkBlueHorizontal(targetTable) == true) || (checkBlueVertical(targetTable) == true)) {
                     mRetry.setVisibility(View.VISIBLE);
